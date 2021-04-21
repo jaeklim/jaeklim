@@ -1,5 +1,5 @@
 ```java
-public class JaeLim extends Developer implements Dad, Golfer, YardWorker {
+public class JaeLim extends Developer implements Dad, Golfer, YardWorker, Pilot {
 
   /**
    * Gets my children from SUPER secret storage.
@@ -18,6 +18,28 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker {
   @Override
   public List<Language> getAvailableProgrammingLanguages() {
     return Arrays.asList(Language.Java, Language.CSharp, Language.ObjectiveC, Language.C, Language.Ruby);
+  }
+
+  /**
+   * Gets a pilot license which is currently valid.
+   * 
+   * @return The current pilot license.
+   */
+  @Override
+  public License getLicense() {
+    return License.PrivatePilot;
+  }
+
+  /**
+   * Gets a list of acquired ratings.
+   * 
+   * @return A list of acquired ratings.
+   */
+  @Override
+  public List<Rating> getRatings() {
+
+    // TODO: Return <code>Ratings.Instrument</code> once it is passed.
+    return Collections.emptyList();
   }
 
   /**
