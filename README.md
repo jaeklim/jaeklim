@@ -26,7 +26,7 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker {
   @Override
   public void work() {
 
-    // Refactor this method to be comparable at home office.
+    // Re-factor this method to be comparable at home office.
     super.work();
   }
 

@@ -17,7 +17,9 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker {
   }
 
   /**
-   * {@inheritDoc}
+   * Gets a list of programming languages that a developer can use.
+   * 
+   * @return A list of programming languages. Max 5 languages.
    */
   @Override
   public List<Language> getAvailableProgrammingLanguages() {
@@ -25,17 +27,23 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker {
   }
 
   /**
-   * {@inheritDoc}
+   * Works hard.
    */
   @Override
   public void work() {
 
-    // Refactor this method to be comparable at home office.
+    // Re-factor this method to be comparable at home office.
     super.work();
   }
 
   /**
-   * {@inheritDoc}
+   * Plays with the given children.
+   * 
+   * @param children A list of children.
+   * @throws Exception An exception can be thrown when a dad didn't expect the
+   *                   current situation.
+   * @see <code>DadCapacityExceededException</code>,
+   *      <code>DeadlockException</code>
    */
   @Override
   public synchronized void play(@NonNull List<Child> children) throws Exception {
