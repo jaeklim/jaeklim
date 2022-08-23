@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
@@ -43,9 +44,11 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker, Pilot 
    */
   @Override
   public List<Rating> getRatings() {
-
-    // TODO: Return <code>Ratings.Instrument</code> once it is passed.
-    return Collections.emptyList();
+    return new ArrayList<>() {
+      {
+        add(Rating.Instrument);
+      }
+    };
   }
 
   /**
