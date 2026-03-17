@@ -27,7 +27,7 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker, Pilot 
    */
   @Override
   public License getLicense() {
-    return License.PrivatePilot;
+    return License.CommercialPilot;
   }
 
   /**
@@ -64,7 +64,7 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker, Pilot 
    *      <code>DeadlockException</code>
    */
   @Override
-  public synchronized void play(@NonNull List<Child> children) throws Exception {
+  public synchronized void play(@NotNull List<Child> children) throws Exception {
 
     // Validation
     if (children.size() > 2) {
