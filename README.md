@@ -74,7 +74,7 @@ public class JaeLim extends Developer implements Dad, Golfer, YardWorker, Pilot 
     // ...
 
     // Verify result
-    if (children.stream().anyMatch(child -> !child.didEnjoy())) {
+    if (children.stream().anyMatch(child -> !child.didEnjoy() || child.isTeenager())) {
       throw new DeadlockException();
     }
   }
